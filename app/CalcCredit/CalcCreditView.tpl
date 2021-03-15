@@ -1,25 +1,25 @@
-{extends file="../templates/main.html"}
+{extends file=$conf->root_path|cat:"/templates/main.tpl"}
 
 {block name=content}
       				
       			            
 <div class="container 50%">						                 
-    <form class="pure-form pure-form-stacked" action="{$app_url}/app/calc_credit.php" method="post">                   
+    <form class="pure-form pure-form-stacked" action="{$conf->action_root}calcCompute" method="post">                   
         <fieldset>                      
             <div>                          
                 <br>	                         
                 <div>								                             
-                    <label for = "id_Loan"> Kwota kredytu <br> </label>                                                                                                           
-                    <input id = "id_Loan" type = "text" name = "Loan"  value="{$Loan}" />										                          
+                    <label for = "Loan"> Kwota kredytu <br> </label>                                                                                                           
+                    <input id = "Loan" type = "text" name = "Loan"  value="{$form->Loan}" />										                          
                 </div>							                         
                 <br>							                        
                 <div>								                                                                      
-                    <label for = "id_Years"> Ilość lat <br> </label>                                                                                                                                                                              
-                    <input id = "id_Years" type = "text" name = "Years"  value="{$Years}" />							                          
+                    <label for = "Years"> Ilość lat <br> </label>                                                                                                                                                                              
+                    <input id = "Years" type = "text" name = "Years"  value="{$form->Years}" />							                          
                 </div>							                         
                 <br>							                          
-                <label for = "id_Interest"> Oprocentowanie <br> </label>                                                                                                                                             
-                <input id = "id_Interest" type = "text" name = "Interest"  value="{$Interest}" />								                      
+                <label for = "Interest"> Oprocentowanie <br> </label>                                                                                                                                             
+                <input id = "Interest" type = "text" name = "Interest"  value="{$form->Interest}" />								                      
             </div>							                     
             <br>							                     
             <div class="12u">								                          
@@ -35,26 +35,25 @@
 
 <div>
                                       
-   {if isset($messages)}	
-   {if count($messages) > 0}     
+   {if $msgs->isError()}	     
   <h1>Wystąpiły błędy: </h1>	
    <ol class="err">            
-       {foreach  $messages as $msg}	
+       {foreach  $msgs->getErrors() as $err}	
        {strip}              
-       <li>{$msg}</li>	
+       <li>{$err}</li>	
        {/strip}		
        {/foreach}		
    </ol>	
    {/if}
-{/if}
+
 	
 
 
 
-{if isset($rate)}
+{if isset($rate->rate)}
 <h1>Rata miesięczna wynosi</h1>	      
 <p class="res">            
-    {$rate}       
+    {$rate->rate}       
 </p>
 {/if}					
            	

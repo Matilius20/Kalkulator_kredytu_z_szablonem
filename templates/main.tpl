@@ -6,9 +6,9 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-                <link rel="stylesheet" href="{$app_url}/css/skel.css" />
-		<link rel="stylesheet" href="{$app_url}/css/style.css" />
-		<link rel="stylesheet" href="{$app_url}/css/style-xlarge.css" />
+                <link rel="stylesheet" href="{$conf->app_url}/css/skel.css" />
+		<link rel="stylesheet" href="{$conf->app_url}/css/style.css" />
+		<link rel="stylesheet" href="{$conf->app_url}/css/style-xlarge.css" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-10 19:09:38
-  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\templates\main.html' */
+/* Smarty version 3.1.39, created on 2021-03-15 16:58:13
+  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60490b62069822_21722002',
+  'unifunc' => 'content_604f84150f1db3_46924349',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '7ac7eb8a771f995bd05885ad82aaaea51f6666fc' => 
+    '76cc4c378a28cb679293727fdcb69549d51f4565' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\templates\\main.html',
-      1 => 1615399547,
+      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\templates\\main.tpl',
+      1 => 1615816718,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60490b62069822_21722002 (Smarty_Internal_Template $_smarty_tpl) {
+function content_604f84150f1db3_46924349 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -33,11 +33,11 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-                <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
+                <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /css/skel.css" />
-		<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
+		<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /css/style.css" />
-		<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['app_url']->value;?>
+		<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->app_url;?>
 /css/style-xlarge.css" />
 		<?php echo '<script'; ?>
  src="js/jquery.min.js"><?php echo '</script'; ?>
@@ -69,7 +69,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </div>           
             <div id="app_content" class="content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_156433161260490b62069126_75154777', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1692449043604f84150f1698_02281456', 'content');
 ?>
        
             </div>                  
@@ -81,12 +81,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_156433161260490b62
         </body>
 </html><?php }
 /* {block 'content'} */
-class Block_156433161260490b62069126_75154777 extends Smarty_Internal_Block
+class Block_1692449043604f84150f1698_02281456 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_156433161260490b62069126_75154777',
+    0 => 'Block_1692449043604f84150f1698_02281456',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
