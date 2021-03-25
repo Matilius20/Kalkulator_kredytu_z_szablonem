@@ -1,4 +1,4 @@
-<?php
+<?php namespace core;
 
 class Messages {
 	private $errors = array ();
@@ -17,10 +17,12 @@ class Messages {
 		return count ( $this->errors ) > 0;
 	}
 	
+	
 	public function getErrors() {
 		return $this->errors;
 	}
-		
+	
+	
 	public function clear() {
 		$this->errors = array ();
 		$this->infos = array ();

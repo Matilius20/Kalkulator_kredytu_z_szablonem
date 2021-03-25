@@ -1,4 +1,4 @@
-{extends file=$conf->root_path|cat:"/templates/main.tpl"}
+{extends file="main.tpl"}
 
 {block name=content}
       				
@@ -10,16 +10,16 @@
                 <br>	                         
                 <div>								                             
                     <label for = "Loan"> Kwota kredytu <br> </label>                                                                                                           
-                    <input id = "Loan" type = "text" name = "Loan"  value="{$form->Loan}" />										                          
+                    <input id = "Loan" type = "text" name = "Loan"  value="{$form->Loan}" >										                          
                 </div>							                         
                 <br>							                        
                 <div>								                                                                      
                     <label for = "Years"> Ilość lat <br> </label>                                                                                                                                                                              
-                    <input id = "Years" type = "text" name = "Years"  value="{$form->Years}" />							                          
+                    <input id = "Years" type = "text" name = "Years"  value="{$form->Years}" >							                          
                 </div>							                         
                 <br>							                          
                 <label for = "Interest"> Oprocentowanie <br> </label>                                                                                                                                             
-                <input id = "Interest" type = "text" name = "Interest"  value="{$form->Interest}" />								                      
+                <input id = "Interest" type = "text" name = "Interest"  value="{$form->Interest}" >								                      
             </div>							                     
             <br>							                     
             <div class="12u">								                          
@@ -33,7 +33,7 @@
 
 
 
-<div>
+            <div class="messages">
                                       
    {if $msgs->isError()}	     
   <h1>Wystąpiły błędy: </h1>	

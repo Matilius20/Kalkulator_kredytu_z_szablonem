@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-15 16:58:13
-  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\templates\main.tpl' */
+/* Smarty version 3.1.39, created on 2021-03-25 14:41:32
+  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\app\views\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_604f84150f1db3_46924349',
+  'unifunc' => 'content_605c930c1444f8_65635816',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '76cc4c378a28cb679293727fdcb69549d51f4565' => 
+    'e32c05c5b625dd28b622b70d09489e26ef5cfa7a' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\templates\\main.tpl',
+      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\app\\views\\templates\\main.tpl',
       1 => 1615816718,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_604f84150f1db3_46924349 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605c930c1444f8_65635816 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -69,7 +69,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </div>           
             <div id="app_content" class="content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1692449043604f84150f1698_02281456', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_744568834605c930c143dd4_06513094', 'content');
 ?>
        
             </div>                  
@@ -81,12 +81,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1692449043604f8415
         </body>
 </html><?php }
 /* {block 'content'} */
-class Block_1692449043604f84150f1698_02281456 extends Smarty_Internal_Block
+class Block_744568834605c930c143dd4_06513094 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1692449043604f84150f1698_02281456',
+    0 => 'Block_744568834605c930c143dd4_06513094',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

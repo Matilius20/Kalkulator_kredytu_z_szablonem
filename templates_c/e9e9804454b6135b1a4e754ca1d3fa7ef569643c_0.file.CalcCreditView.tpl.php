@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-15 16:54:38
-  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\app\CalcCredit\CalcCreditView.tpl' */
+/* Smarty version 3.1.39, created on 2021-03-25 14:41:32
+  from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\app\views\CalcCreditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_604f833e4e18c3_25634943',
+  'unifunc' => 'content_605c930c114289_27654704',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'd5e5f34da18d619685b35d4be85997736df5205f' => 
+    'e9e9804454b6135b1a4e754ca1d3fa7ef569643c' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\app\\CalcCredit\\CalcCreditView.tpl',
-      1 => 1615823617,
+      0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\app\\views\\CalcCreditView.tpl',
+      1 => 1616679204,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_604f833e4e18c3_25634943 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605c930c114289_27654704 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_527882087604f833e4cded3_13638319', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_547745181605c930c101060_80286398', 'content');
 ?>
 	
 
 
 
- <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, ($_smarty_tpl->tpl_vars['conf']->value->root_path).("/templates/main.tpl"));
+ <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'content'} */
-class Block_527882087604f833e4cded3_13638319 extends Smarty_Internal_Block
+class Block_547745181605c930c101060_80286398 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_527882087604f833e4cded3_13638319',
+    0 => 'Block_547745181605c930c101060_80286398',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -58,18 +58,18 @@ calcCompute" method="post">
                 <div>								                             
                     <label for = "Loan"> Kwota kredytu <br> </label>                                                                                                           
                     <input id = "Loan" type = "text" name = "Loan"  value="<?php echo $_smarty_tpl->tpl_vars['form']->value->Loan;?>
-" />										                          
+" >										                          
                 </div>							                         
                 <br>							                        
                 <div>								                                                                      
                     <label for = "Years"> Ilość lat <br> </label>                                                                                                                                                                              
                     <input id = "Years" type = "text" name = "Years"  value="<?php echo $_smarty_tpl->tpl_vars['form']->value->Years;?>
-" />							                          
+" >							                          
                 </div>							                         
                 <br>							                          
                 <label for = "Interest"> Oprocentowanie <br> </label>                                                                                                                                             
                 <input id = "Interest" type = "text" name = "Interest"  value="<?php echo $_smarty_tpl->tpl_vars['form']->value->Interest;?>
-" />								                      
+" >								                      
             </div>							                     
             <br>							                     
             <div class="12u">								                          
@@ -83,7 +83,7 @@ calcCompute" method="post">
 
 
 
-<div>
+            <div class="messages">
                                       
    <?php if ($_smarty_tpl->tpl_vars['msgs']->value->isError()) {?>	     
   <h1>Wystąpiły błędy: </h1>	
