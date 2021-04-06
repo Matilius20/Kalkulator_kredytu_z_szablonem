@@ -1,7 +1,9 @@
 {extends file="main.tpl"}
 
 {block name=content}
-      				
+    
+
+			                    			            
       			            
 <div class="container 50%">						                 
     <form class="pure-form pure-form-stacked" action="{$conf->action_root}calcCompute" method="post">                   
@@ -25,30 +27,15 @@
             <div class="12u">								                          
                 <ul class="actions">								                              
                     <center><li><input type="submit" class= "special big" value="Oblicz miesięczną ratę" /></li></center>								                          
-                </ul>                                                         	                      
+                </ul>
             </div>                   
-        </fieldset>                  
+        </fieldset>
+           <center><a href="{$conf->action_url}logout"  class="pure-menu-heading pure-menu-link">Wyloguj</a></center>	
     </form>						              
 </div>
 
 
-
-            <div class="messages">
-                                      
-   {if $msgs->isError()}	     
-  <h1>Wystąpiły błędy: </h1>	
-   <ol class="err">            
-       {foreach  $msgs->getErrors() as $err}	
-       {strip}              
-       <li>{$err}</li>	
-       {/strip}		
-       {/foreach}		
-   </ol>	
-   {/if}
-
 	
-
-
 
 {if isset($rate->rate)}
 <h1>Rata miesięczna wynosi</h1>	      
@@ -56,8 +43,8 @@
     {$rate->rate}       
 </p>
 {/if}					
-           	
-</div>
+
+{include file='messages.tpl'}
 		
 {/block}	
 

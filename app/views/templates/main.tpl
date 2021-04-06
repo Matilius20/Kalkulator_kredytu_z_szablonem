@@ -19,7 +19,7 @@
         <body class="landing">           
             <div>			
                 <div>				
-                    <h2>{$page_title|default:"Tytuł domyślny"}</h2>			                      
+                    <center><h2>{$page_title|default:"Tytuł domyślny"}</h2></center>			                      
                 </div>			           
                 <div id="three" class="wrapper style3 special">								                                  
                     <header class="major">                                                              

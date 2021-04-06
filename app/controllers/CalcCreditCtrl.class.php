@@ -81,9 +81,10 @@ class CalcCreditCtrl {
 	
 	
 	
-	public function generateView(){
-		
-		
+	public function generateView(){          
+            
+                getSmarty()->assign('user',unserialize($_SESSION['user']));           
+         				
 		getSmarty()->assign('page_title','Kalkulator kreytu');
 		getSmarty()->assign('page_description','Oblicz swoją miesieczną ratę');
 	
