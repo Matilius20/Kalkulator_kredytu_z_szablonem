@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-06 12:06:35
+/* Smarty version 3.1.39, created on 2021-04-06 13:37:19
   from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\app\views\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_606c32abcc3b83_20041651',
+  'unifunc' => 'content_606c47ef821451_96206454',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e32c05c5b625dd28b622b70d09489e26ef5cfa7a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\app\\views\\templates\\main.tpl',
-      1 => 1617703594,
+      1 => 1617709035,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_606c32abcc3b83_20041651 (Smarty_Internal_Template $_smarty_tpl) {
+function content_606c47ef821451_96206454 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -69,7 +69,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </div>           
             <div id="app_content" class="content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1101159564606c32abcc30e4_87237865', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_424193414606c47ef8201f5_00945118', 'content');
 ?>
        
             </div>                  
@@ -81,12 +81,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1101159564606c32ab
         </body>
 </html><?php }
 /* {block 'content'} */
-class Block_1101159564606c32abcc30e4_87237865 extends Smarty_Internal_Block
+class Block_424193414606c47ef8201f5_00945118 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1101159564606c32abcc30e4_87237865',
+    0 => 'Block_424193414606c47ef8201f5_00945118',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

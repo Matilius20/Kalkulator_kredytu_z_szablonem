@@ -59,25 +59,32 @@ class CalcCreditCtrl {
 	}
 	
 	
-	public function process(){
+	public function action_calcCompute(){
 
 		$this->getParams();
 		
 		if ($this->validate()) {
 				
-			
+		      
 			$this->form->Loan = intval($this->form->Loan);
 			$this->form->Years = intval($this->form->Years);
 			$this->form->Interest = floatval($this->form->Interest);
-				
-		
+                        
 		        $this->rate->rate = $this->form->Loan / ($this->form->Years * 12) * (1.0 + $this->form->Interest / 100);
+                        
+                        getMessages()->addInfo('Rata miesięczna została policzona.');
 			
 			
 		}
 		
 		$this->generateView();
 	}
+        
+        public function action_calcShow(){                    
+            getMessages()->addInfo('Witaj w kalkulatorze kredytu.');         
+            $this->generateView();
+	}
+        
 	
 	
 	

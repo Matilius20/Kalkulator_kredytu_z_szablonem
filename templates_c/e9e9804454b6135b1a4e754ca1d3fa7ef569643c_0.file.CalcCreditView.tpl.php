@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-06 12:05:19
+/* Smarty version 3.1.39, created on 2021-04-06 13:40:40
   from 'C:\xampp\htdocs\Kalkulator_kredytu_z_szablonem\app\views\CalcCreditView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_606c325f21a3b0_32682843',
+  'unifunc' => 'content_606c48b85e8861_94875031',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e9e9804454b6135b1a4e754ca1d3fa7ef569643c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Kalkulator_kredytu_z_szablonem\\app\\views\\CalcCreditView.tpl',
-      1 => 1617703517,
+      1 => 1617709237,
       2 => 'file',
     ),
   ),
@@ -21,14 +21,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:messages.tpl' => 1,
   ),
 ),false)) {
-function content_606c325f21a3b0_32682843 (Smarty_Internal_Template $_smarty_tpl) {
+function content_606c48b85e8861_94875031 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1795377192606c325f20e884_50596557', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_23630502606c48b85d90d9_00296865', 'content');
 ?>
 	
 
@@ -37,12 +37,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1795377192606c325f
  <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'content'} */
-class Block_1795377192606c325f20e884_50596557 extends Smarty_Internal_Block
+class Block_23630502606c48b85d90d9_00296865 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1795377192606c325f20e884_50596557',
+    0 => 'Block_23630502606c48b85d90d9_00296865',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

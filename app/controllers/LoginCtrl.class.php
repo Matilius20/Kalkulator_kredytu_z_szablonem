@@ -60,7 +60,7 @@ class LoginCtrl{
 		return ! getMessages()->isError();
 	}
 	
-	public function doLogin(){
+	public function action_login(){
 
 		$this->getParams();
 		
@@ -72,7 +72,7 @@ class LoginCtrl{
 		
 	}
 	
-	public function doLogout(){
+	public function action_logout(){
             
 		session_destroy();
 		
