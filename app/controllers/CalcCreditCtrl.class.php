@@ -74,6 +74,38 @@ class CalcCreditCtrl {
                         
                         getMessages()->addInfo('Rata miesięczna została policzona.');
 			
+                        try{
+                            $database = new \Medoo\Medoo([
+	 	
+                                'database_type' => 'mysql',
+                                'database_name' => 'Kredyt',	
+                                'server' => 'localhost',	
+                                'username' => 'root',                                                              
+                                'password' => '',	
+                                'charset' => 'utf8',	
+                                'collation' => 'utf8_polish_ci',	
+                                'port' => 3306,
+                                'option' => [		
+                                    \PDO::ATTR_CASE => \PDO::CASE_NATURAL,
+                                    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
+                                    ]
+                        ]);
+ 
+ 
+
+                            $database->insert("wynik", [	
+                                "kwota" => $this->form->Loan,	
+                                "lata" => $this->form->Years,
+                                "oprocentowanie" => $this->form->Interest,
+                                "rata"=> $this->rate->rate,
+                                
+                                ]);
+                            
+                            
+                        } catch (\PDOException $ex) {
+                            getMessages()->addError("DB Error: ".$ex->getMessage());
+
+                        }
 			
 		}
 		
@@ -92,7 +124,7 @@ class CalcCreditCtrl {
             
                 getSmarty()->assign('user',unserialize($_SESSION['user']));           
          				
-		getSmarty()->assign('page_title','Kalkulator kreytu');
+		getSmarty()->assign('page_title','Kalkulator kredytu');
 		getSmarty()->assign('page_description','Oblicz swoją miesieczną ratę');
 	
 					
