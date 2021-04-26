@@ -97,8 +97,7 @@ class CalcCreditCtrl {
                                 "kwota" => $this->form->Loan,	
                                 "lata" => $this->form->Years,
                                 "oprocentowanie" => $this->form->Interest,
-                                "rata"=> $this->rate->rate,
-                                
+                                "rata"=> $this->rate->rate,                                                              
                                 ]);
                             
                             

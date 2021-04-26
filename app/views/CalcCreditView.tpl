@@ -26,11 +26,12 @@
             <br>							                     
             <div class="12u">								                          
                 <ul class="actions">								                              
-                    <center><li><input type="submit" class= "special big" value="Oblicz miesięczną ratę" /></li></center>								                          
+                    <center><li><input type="submit" class= "pure-menu-heading pure-menu-link" value="Oblicz miesięczną ratę" /></li></center>								                          
                 </ul>
             </div>                   
         </fieldset>
-           <center><a href="{$conf->action_url}logout"  class="pure-menu-heading pure-menu-link">Wyloguj</a></center>	
+           <center><a href="{$conf->action_url}logout"  class="pure-menu-heading pure-menu-link">Wyloguj</a></center>
+           <center><a href="{$conf->action_url}result"  class="pure-menu-heading pure-menu-link">Tabela z wynikami</a></center>	
     </form>						              
 </div>
 
@@ -46,8 +47,8 @@
 
 {include file='messages.tpl'}
 		
-{/block}	
+{/block}
 
 
 
- 
+
